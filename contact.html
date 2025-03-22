@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Harun Nsungi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HARUN NSUNGI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="theme-toggle ms-3">
+                <button id="themeToggle" class="btn btn-sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content text-center">
+                <h1>Contact Me</h1>
+                <p>Let's discuss how I can help with your next project</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="text">
+                                <h5>Location</h5>
+                                <p>Ilala, Dar es Salaam, Tanzania</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="text">
+                                <h5>Email</h5>
+                                <p>Use the contact form to reach me securely</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="text">
+                                <h5>LinkedIn</h5>
+                                <p><a href="https://www.linkedin.com/in/harun-nsungi-470394287/" target="_blank">Connect with me</a></p>
+                            </div>
+                        </div>
+                    
+                        <!-- Added a hidden honeypot field for spam protection -->
+                        <input type="text" name="_honey" style="display:none">
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <h2>Send Me A Message</h2>
+                        <form id="contactForm" class="contact-form" action="https://formsubmit.co/nsungi180@gmail.com" method="POST">
+                            <!-- FormSubmit configuration fields -->
+                            <input type="hidden" name="_subject" value="New message from portfolio website">
+                            <input type="hidden" name="_captcha" value="true">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_honey" value="">
+                            <!-- Use this if you want visitors to return to your site after submission -->
+                            <input type="hidden" name="_next" value="https://yoursite.com/thanks.html">
+                            
+                            <!-- Add this line right here -->
+                            <input type="hidden" name="_next" value="thanks.html">
+
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                                
+                                <div class="col-md-6 form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <div id="form-status" class="mt-3"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Frequently Asked Questions</h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I offer a wide range of services including web development, mobile app development, database design, IT support, and machine learning solutions. My expertise spans from front-end development with HTML/CSS/JavaScript to back-end systems using Python, Django, and SQL databases. I also specialize in AI and NLP implementations for business applications.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do you handle project deadlines?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I believe in clear communication and realistic timelines. At the beginning of each project, I establish a detailed timeline with specific milestones. I use project management tools to track progress and provide regular updates. If any challenges arise that might affect the deadline, I communicate them proactively and work collaboratively to find solutions.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Do you provide ongoing support after project completion?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, I provide ongoing support and maintenance for all completed projects. I offer different support packages depending on your needs, ranging from basic troubleshooting to comprehensive maintenance plans. I'm committed to ensuring that your software continues to function optimally and can be updated as your business needs evolve.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How do you approach new projects?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            My approach begins with understanding your business needs and objectives. I start with a detailed consultation to gather requirements, followed by planning and designing a solution that meets your specific needs. Throughout the development process, I maintain open communication, provide regular updates, and incorporate feedback. After deployment, I offer training and support to ensure a smooth transition.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <h3>Harun Nsungi</h3>
+                        <p>Machine Learning Engineer & Software Developer</p>
+                        <p>Ilala, Dar es Salaam, Tanzania</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#experience">Experience</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Me</h4>
+                        <p>
+                            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/harun-nsungi-470394287/" target="_blank">LinkedIn Profile</a>
+                            <li><a href="contact.html">Contact</a></li>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2025 Harun Nsungi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

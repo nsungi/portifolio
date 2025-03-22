@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Harun Nsungi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">HARUN NSUNGI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="theme-toggle ms-3">
+                <button id="themeToggle" class="btn btn-sm">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content text-center">
+                <h1>My Projects</h1>
+                <p>Showcasing my expertise through real-world applications</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="project-filters text-center mb-5">
+                <button class="btn btn-filter active" data-filter="all">All Projects</button>
+                <button class="btn btn-filter" data-filter="web">Web Development</button>
+                <button class="btn btn-filter" data-filter="mobile">Mobile Apps</button>
+                <button class="btn btn-filter" data-filter="ai">AI & ML</button>
+            </div>
+
+            <div class="row projects-container">
+                <!-- Contract Metadata Extraction System -->
+                <div class="col-lg-6 col-md-6 mb-4 project-item ai">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400.png?text=Contract+Metadata+Extraction" alt="Contract Metadata Extraction" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3>Contract Metadata Extraction System</h3>
+                            <p>Developed a system to extract, process, and analyze metadata from business contracts using NLP, PostgreSQL, LLMs, and AI.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">NLP</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">LLM</span>
+                                <span class="tech-badge">AI</span>
+                            </div>
+                            <div class="project-buttons mt-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal1">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inventory & Point of Sales Management System -->
+                <div class="col-lg-6 col-md-6 mb-4 project-item web">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400.png?text=Inventory+POS+System" alt="Inventory & POS System" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3>Inventory & Point of Sales Management System</h3>
+                            <p>A comprehensive inventory and sales tracking system for retail businesses with an easy-to-use interface and robust database.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">HTML/CSS</span>
+                            </div>
+                            <div class="project-buttons mt-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal2">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel Management System -->
+                <div class="col-lg-6 col-md-6 mb-4 project-item web">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400.png?text=Hotel+Management+System" alt="Hotel Management System" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3>Hotel Management System</h3>
+                            <p>A robust system to manage hotel reservations, room availability, and customer check-in/check-out processes.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">UI/UX</span>
+                            </div>
+                            <div class="project-buttons mt-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- School Management System -->
+                <div class="col-lg-6 col-md-6 mb-4 project-item web">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400.png?text=School+Management+System" alt="School Management System" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3>School Management System</h3>
+                            <p>A comprehensive system to manage school operations, including admission process, fee management, attendance register, and exam results management.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">SQL</span>
+                            </div>
+                            <div class="project-buttons mt-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal4">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Management Application -->
+                <div class="col-lg-6 col-md-6 mb-4 project-item mobile web">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://via.placeholder.com/600x400.png?text=Business+Management+App" alt="Business Management App" class="img-fluid">
+                        </div>
+                        <div class="project-content">
+                            <h3>Business Management Application</h3>
+                            <p>A mobile and web-based business management application for businesses to manage operations, finance, and inventory.</p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">SQL</span>
+                            </div>
+                            <div class="project-buttons mt-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal5">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <!-- Modal 1: Contract Metadata Extraction System -->
+    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel1">Contract Metadata Extraction System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400.png?text=Contract+Metadata+Extraction" alt="Contract Metadata Extraction" class="img-fluid mb-4">
+                    <h4>Project Overview</h4>
+                    <p>This project focused on developing an advanced system to extract, process, and analyze metadata from business contracts. Working with international clients, the system automated the extraction of critical information from legal documents.</p>
+                    
+                    <h4>Challenges</h4>
+                    <ul>
+                        <li>Processing diverse formats of legal documents with varying structures</li>
+                        <li>Ensuring high accuracy in metadata extraction from complex legal language</li>
+                        <li>Integrating with existing business operations systems</li>
+                    </ul>
+                    
+                    <h4>Solutions</h4>
+                    <p>Leveraged cutting-edge technologies including Natural Language Processing (NLP), Large Language Models (LLM), and custom AI algorithms to analyze and extract relevant information. Implemented PostgreSQL for efficient data storage and retrieval.</p>
+                    
+                    <h4>Results</h4>
+                    <ul>
+                        <li>Reduced contract processing time by 75%</li>
+                        <li>Improved metadata extraction accuracy to over 95%</li>
+                        <li>Streamlined business operations through automated data extraction</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Inventory & POS System -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel2">Inventory & Point of Sales Management System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400.png?text=Inventory+POS+System" alt="Inventory & POS System" class="img-fluid mb-4">
+                    <h4>Project Overview</h4>
+                    <p>Developed a comprehensive inventory and sales tracking system for retail businesses. The system allows for efficient management of products, processing of sales transactions, and generation of detailed reports.</p>
+                    
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Real-time inventory tracking and management</li>
+                        <li>User-friendly point of sale interface</li>
+                        <li>Detailed sales reporting and analytics</li>
+                        <li>Customer management system</li>
+                        <li>Multi-location inventory tracking</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <p>Python (Django), SQL, HTML/CSS, JavaScript</p>
+                    
+                    <h4>Results</h4>
+                    <p>The system significantly improved efficiency in tracking inventory and sales across multiple retail locations, reducing manual errors and providing valuable business insights through detailed reporting.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Hotel Management System -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel3">Hotel Management System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400.png?text=Hotel+Management+System" alt="Hotel Management System" class="img-fluid mb-4">
+                    <h4>Project Overview</h4>
+                    <p>Created a robust system to manage hotel operations including reservations, room availability, and customer check-in/check-out processes.</p>
+                    
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Room availability tracking in real-time</li>
+                        <li>Reservation management system</li>
+                        <li>Customer check-in/check-out processing</li>
+                        <li>Billing and invoicing</li>
+                        <li>Reporting and analytics</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <p>Python, SQL, User Interface Design</p>
+                    
+                    <h4>Results</h4>
+                    <p>Automated many manual processes, significantly reducing errors and enhancing operational efficiency. The system provided hotel management with valuable insights and improved the overall customer experience.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: School Management System -->
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel4">School Management System</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400.png?text=School+Management+System" alt="School Management System" class="img-fluid mb-4">
+                    <h4>Project Overview</h4>
+                    <p>Designed and developed a comprehensive system to manage all aspects of school operations, streamlining administrative tasks and improving information management.</p>
+                    
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Student admission and enrollment process</li>
+                        <li>Fee management and payment tracking</li>
+                        <li>Attendance management system</li>
+                        <li>Exam results processing and reporting</li>
+                        <li>Teacher and staff management</li>
+                        <li>Timetable scheduling</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <p>Python (Django), SQL, Responsive Web Design</p>
+                    
+                    <h4>Results</h4>
+                    <p>The system significantly reduced administrative overhead, improved data accuracy, and provided valuable insights to school management. It streamlined communication between teachers, students, and parents.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Business Management Application -->
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel5">Business Management Application</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400.png?text=Business+Management+App" alt="Business Management App" class="img-fluid mb-4">
+                    <h4>Project Overview</h4>
+                    <p>Developed a cross-platform business management application that allows business owners to manage operations, finances, and inventory from both mobile devices and web browsers.</p>
+                    
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Inventory management and tracking</li>
+                        <li>Financial reporting and analytics</li>
+                        <li>Customer relationship management</li>
+                        <li>Order processing and fulfillment</li>
+                        <li>Employee management and scheduling</li>
+                        <li>Cross-platform synchronization</li>
+                    </ul>
+                    
+                    <h4>Technologies Used</h4>
+                    <p>Flutter, Dart, Python (Django), SQL, RESTful API</p>
+                    
+                    <h4>Results</h4>
+                    <p>Streamlined business processes and improved decision-making with data-driven insights. The application's cross-platform nature allowed business owners to manage their operations from anywhere at any time.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Need a custom software solution?</h2>
+                <p>I can help bring your ideas to life with cutting-edge technology.</p>
+                <a href="contact.html" class="btn btn-primary">Let's Talk</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-info">
+                        <h3>Harun Nsungi</h3>
+                        <p>Machine Learning Engineer & Software Developer</p>
+                        <p>Ilala, Dar es Salaam, Tanzania</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#experience">Experience</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contact Me</h4>
+                        <p>
+                            <i class="fas fa-envelope"></i> nsungi180@gmail.com<br>
+                            <i class="fas fa-phone"></i> 0628035045<br>
+                            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/harun-nsungi-470394287/" target="_blank">LinkedIn Profile</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright text-center">
+                <p>&copy; 2025 Harun Nsungi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
